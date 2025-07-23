@@ -3,7 +3,7 @@ venv/
 .venv/
 env/
 .env/
-llm_env/   # <--- ADD THIS LINE IF YOUR VIRTUAL ENV IS NAMED llm_env
+llm_env/
 
 # Cached Python files
 __pycache__/
@@ -18,12 +18,9 @@ faiss_index.bin
 topic_ids.pkl
 topic_docs.pkl
 
-# Your CSV (if you don't want to track changes to it publicly, though often you do)
-# Kisan Call center Queries.csv
-
 # IDE specific files
-.idea/      # IntelliJ/PyCharm
-.vscode/    # VS Code
+.idea/
+.vscode/
 *.sublime-project
 *.sublime-workspace
 
@@ -31,11 +28,12 @@ topic_docs.pkl
 .DS_Store
 Thumbs.db
 
-# Flask specific (if using __pycache__ within templates/static etc.)
+# Flask specific
 instance/
 .flaskenv
 
-# DANGER: If you hardcoded your API key, you MUST delete that line from app.py
-# before committing if you plan to make the repo public without properly removing the key.
-# If you didn't remove it, you'd add:
-# app.py # <--- ONLY DO THIS IF YOU HARDCODED THE API KEY AND DON'T WANT app.py public
+# DANGER: If you hardcoded your API key, make sure you delete that line from app.py
+#         before committing if you intend to make the repo public.
+#         If app.py has the key AND you want to make the repo public, you MUST
+#         either remove the key from app.py or add app.py to .gitignore (but then
+#         app.py itself won't be version controlled).
