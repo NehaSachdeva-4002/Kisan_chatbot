@@ -13,7 +13,8 @@ import google.generativeai as genai
 
 # -------- CONFIG --------
 CSV_PATH = "Kisan Call center Queries.csv"
-GOOGLE_API_KEY = "AIzaSyD5d5-FNsHR2wYaHoaWzSNwDDZbDJQ0DWs" 
+GOOGLE_API_KEY = "
+" 
 
 # Initialize the Google Generative AI client
 if GOOGLE_API_KEY and GOOGLE_API_KEY != "YOUR_GOOGLE_API_KEY_HERE":
